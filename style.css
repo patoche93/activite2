@@ -1,0 +1,1085 @@
+/*
+Theme Name: Mon site 
+Description:
+Author:
+Theme URI:
+Author URI:
+Version: 0
+License:
+License URI:
+Text Domain:
+-----------------------------------------------------------------------------*/
+.img_gauche{padding-right:30px;float: left;}
+.relative{position:relative;}
+
+/*Nouveau thème*************/
+body{color: #262626;font-size: 15px;line-height: 1.47;font-family: 'Open Sans';font-weight: 400;letter-spacing: 0px;background-color: #ffffff;margin: 0;/*min-width: 320px;*/overflow-x: hidden;}
+.contenu_du_site{padding:15px 0 0; margin-top: 0;}
+.page-id-11830 .contenu_du_site, .page-id-11950 .contenu_du_site{padding-top:0 !important;}
+@media (max-width: 1068px){
+    /*.contenu_du_site{padding-left: 30px;padding-right: 30px;}*/
+    .main{padding-left: 30px;padding-right: 30px;}
+    .page-id-11830 .contenu_du_site{padding-left: 0;padding-right: 0;}
+}
+
+.container,.container-fluid{max-width:1060px;}
+a{color: #6dc2c1;text-decoration:none;}
+a:hover,a:focus{text-decoration:none;}
+
+
+
+
+
+
+/*menu */
+#header{position:relative;min-height:113px;}
+
+#header .navbar-header a{display:inline-block; padding:10px 0;}
+#header .navbar-header img{width:185px;-webkit-transition:all 0.2s;transition:all 0.2s;}
+#header .navbar-default{margin:0px;border-radius:0;background:none;}
+#header #navigation{margin-top:77px;float:right;-webkit-transition:all 0.2s;transition:all 0.2s;}
+#header .navbar-nav li{padding:0 12px;}
+#header .navbar-nav li a, #header .nav li.current-menu-ancestor a{font-family: 'Josefin Sans';font-size: 13px;font-weight: 700;letter-spacing: 0px;text-transform: uppercase;line-height: 30px;padding:0;border-top: 4px solid transparent;color:#002a55;}
+#header .nav > li > a:focus, #header .nav > li > a:hover, #header .nav > li.active > a{background-color:transparent;color: #6dc2c1;border-color: #6dc2c1;}
+
+#header .affix-header{width:100%;background:#ffffff;z-index:1050;box-shadow: 0px 10px 50px -2px rgba(0, 0, 0, 0.14);}
+#header .affix-header.affix {top:0px;box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px;}
+#header .affix-header.affix .navbar-header img{width:110px;}
+#header .affix-header.affix #navigation{margin-top:40px;}
+
+.langue{position:absolute;top:10px;right:27px;z-index:1060;}
+.bloc_langue{float:right;text-transform:uppercase;color:#6f7070;margin-right:15px;font-size:12px;font-weight: 600;font-family: 'Josefin Sans', sans-serif;padding-top: 12px;}
+.langue a, .langue a:hover, .langue a:focus{color:#6f7070 !important;text-decoration:none !important;display:flex;}
+.langue a img{margin-top:2px;}
+.langue a span{margin-left:10px;}
+
+
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color:transparent;}
+.navbar-default .navbar-toggle{border-color:transparent;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#6dc2c1;}
+.navbar-default{background-color:#ffffff;border-color:#ffffff;}
+.navbar-toggle .icon-bar{width:18px;height:3px;}
+.navbar-toggle .icon-bar + .icon-bar{margin-top:3px;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{margin-top:20px;border-color:#ffffff;}
+
+
+body#consilio #navigation .dropdown-menu{width: 178px;border-top: 3px solid #6dc2c1;font-family: 'Open Sans';font-weight: 400;box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);-webkit-box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);-moz-box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);border-radius:0px;padding:0;}
+body#consilio #navigation .dropdown-menu li{float: none;margin: 0;padding: 0;}
+body#consilio #navigation .dropdown-menu > li > a{border-bottom: 1px solid #6dc2c1;padding:10px;color: #002a55;font-family: 'Open Sans';font-weight: 400;font-size: 13px;}
+
+#navigation .dropdown-menu > li > a:focus, #navigation .dropdown-menu > li > a:hover, #navigation .dropdown-menu > .active > a:focus {color: #262626;text-decoration: none;background-color: #6dc2c1;}
+#navigation .dropdown-menu > .active > a, #navigation .dropdown-menu > .active > a:hover{color: #262626;text-decoration: none;background-color: #ffffff;box-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;}
+#navigation ul li.dropdown:hover .dropdown-menu{display: block;}
+
+
+@media (max-width: 992px){
+    body#consilio #header{position:relative;min-height:77px;}
+    body#consilio #header .navbar-header img{width:110px;}
+    body#consilio #header #navigation{margin-top:40px;}
+    body#consilio #header .navbar-nav li{padding:0 5px;}
+    body#consilio #header .navbar-nav li a, body#consilio #header .nav li.current-menu-ancestor a{font-size: 12px;}
+}
+@media (max-width: 768px){
+    body#consilio #header #navigation{margin-top:0;float:none;}
+    body#consilio #navigation ul li.dropdown .dropdown-menu{display: block;position:relative;float:none;top:0;left:0;width:100%;border:0;}
+    body#consilio #navigation .dropdown-menu > li > a{border-bottom:none;padding:0 10px;color: #002a55;font-family: 'Open Sans';font-weight: 400;font-size: 13px;}
+    body#consilio .navbar-toggle{margin-top:45px;}
+}
+
+
+
+/*Home**************/
+.owl-carousel .owl-item{height:534px;}
+.owl-carousel .owl-controls .owl-nav .owl-prev,.owl-carousel .owl-controls .owl-nav .owl-next{display:none !important;}
+.owl-carousel:hover .owl-controls .owl-nav .owl-prev,.owl-carousel:hover .owl-controls .owl-nav .owl-next,.owl-carousel:focus .owl-controls .owl-nav .owl-prev,.owl-carousel:focus .owl-controls .owl-nav .owl-next{display:block !important;}
+.owl-carousel .owl-controls .owl-nav .owl-prev{position: absolute;top: 40%;left: 60px;color: #ffffff;font-size: 30px;line-height: 50px;padding: 5px 25px;background-color: rgba(0, 0, 0, 0.5);}
+.owl-carousel .owl-controls .owl-nav .owl-next{position: absolute;top: 40%;right: 70px;color:#ffffff;font-size: 30px;line-height: 50px;padding: 5px 25px;background-color: rgba(0, 0, 0, 0.5);}
+
+
+
+.titre_slider{position: relative;top: 55%;z-index: 7;white-space: normal;font-size: 30px;line-height: 50px;font-weight: 600;color: rgb(0, 42, 85);font-family: 'Josefin Sans';visibility: inherit;
+transition: none 0s ease 0s;border-width: 0px;letter-spacing: 0px;min-height: 0px;max-height: none;opacity: 1;transform: translate3d(0px, 0px, 0px);transform-origin: 50% 50% 0px;text-align: center;}
+/*.titre_slider a{text-transform: uppercase;color:#002a55;background-color: rgba(255, 255, 255, 0.8);padding: 20px 80px;display:inline-block;min-width: 829px;}*/
+.titre{text-transform: uppercase;
+color: #002454;
+background-color: rgba(255, 255, 255, 0.4);
+padding: 20px 80px;
+display: inline-block;}
+
+@media (max-width: 768px){
+    body#consilio .owl-carousel .owl-item { height: 400px;}
+    body#consilio .titre_slider{top:55%;font-size:20px;line-height:30px;}
+    body#consilio .titre{padding:10px 20px;display:block;}
+    body#consilio .fa_with_bg::after {position: absolute;content: '';border: 2px solid #fff;z-index: -1;left: -10px;width: 40px;height: 40px;border-radius: 50%;top: -10px;}
+    body#consilio .owl-carousel .owl-controls .owl-nav .owl-prev{top:40%;left:20px;}
+    body#consilio .owl-carousel .owl-controls .owl-nav .owl-next{top:40%;right:20px;}
+}
+
+
+
+
+
+.fleche{margin-top: 20px;}
+.fa-chevron-down{color:#ffffff;}
+.fa_with_bg{position: relative;}
+
+.fa_with_bg::after{position: absolute;content: '';border: 2px solid #fff;z-index: -1;left: -15px;width: 60px;height: 60px;border-radius: 50%;top: -12px;}
+
+/*Contenu*****************/
+.main{width:100%;padding-top:20px;padding-bottom:60px;}
+.container{}
+
+/*Background*****************/
+.page-id-11832 .white{background-color:#F8F8F8;}
+.page-id-11832 .grey{background-color:#ffffff !important;}
+.white{background-color:#ffffff;}
+.home .grey{background-color:#F8F8F8;}
+.page .grey{background-color:#F0F0F0;}
+
+/*Titre**************/
+.centre{text-align:center !important;}
+.gauche{text-align: left !important;}
+h1,h2,h3{text-transform: uppercase;color: #002a55;}
+h1{margin:20px 0;}
+.home.page .title-heading-center{color: #002a55;font-family: 'Josefin Sans', sans-serif;text-transform: uppercase;font-weight: 400 ;font-size: 30px;line-height: 36px;max-width:100%;}
+h2 {font-family: 'Josefin Sans';font-weight: 600;line-height: 1.08;letter-spacing: 0px;font-size:32px;text-transform: uppercase !important;}
+h3{font-size: 24px !important;font-weight: 400 !important;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;}
+h4{font-family: 'Josefin Sans';font-weight: 600;line-height: 1;letter-spacing: 0px;color: #002a55;font-size: 20px;}
+.fusion-title .title-sep.sep-double {
+    height: 6px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-color: #e0dede !important;
+}
+h3, h4{margin:30px 0;}
+
+/*page vos besoins*/
+@media (max-width: 480px){
+    .picto{margin-bottom:30px;}
+    h1,.home.page .title-heading-center{font-size: 26px !important;line-height: 26px !important;}
+    h2{font-size:24px !important;}
+    h3{font-size:22px !important;}
+}
+@media (max-width: 360px){
+    .picto{margin-bottom:60px;}
+}
+
+
+/*page légales*/
+.page-id-13494 h2{font-size: 23.807px;line-height: 25.638px;}
+.page-id-13494 h3,.page-id-13494 h4{margin:30px 0 10px 0;font-family: 'Josefin Sans' !important;
+font-weight: 600 !important;
+line-height: 1;
+letter-spacing: 0px;text-transform:none;}
+.page-id-13494 .main ul{margin-left:30px !important;}
+
+/*condition generale de vente***/
+.page-id-13508 h2{font-size:26px !important;}
+
+.category h1{font-size:26px;font-weight:600;}
+
+p{margin-top: 0;margin-bottom: 20px;}
+.texte-grand{font-size: 18px;line-height: 24px;}
+.texte-grand-maj{text-transform: uppercase;color: #002955;font-size: 18px;line-height: 24px;}
+
+.main ul{padding-left: 0;margin-left: 12px;margin-top: -15px !important;}
+.main ul li{list-style-type: none;font-weight: 400 !important;margin-bottom: 5px !important;font-size: 15px !important;}
+.main ul li::before {    font-size: 18px;font-weight: bold;content: ".";display: block;width: 12px;height: 5px;position: relative;margin-left: -12px !important;}
+.main ul.list-cluster li::before{content:"" !important;}
+.main ul.list-cluster li a::before{position: absolute;
+    font: normal normal normal 12px/1 FontAwesome;
+    content: "\f105";
+    margin-left: -10px;
+    color: #262626 !important;
+    margin-top: 5px;}
+.main ul.savoir-plus li {list-style-type: none;padding-top: 13px;}
+.main ul.savoir-plus li::before {content: '+';color: #6dc2c1;font-size: 18px;display: block;position: absolute;}
+.main ul.savoir-plus li a {border-bottom: 1px solid #6dc2c1;font-size: 18px;font-weight: 600;text-transform: uppercase;margin-top: -5px;}
+
+ul.savoir-plus {float: right;margin-top: 35px !important;}
+
+/*Page offre page test*********************$$$******/
+#gform_wrapper_37 .gform_title{display:none;}
+
+/*------- Boouton formulaire mon compte: valider --------*/
+#gform_fields_37 li,.gform_footer {text-align:right;} /* text-align: center -> valeur par defaut*/
+
+.gform_wrapper .gfield input[type="text"], .gform_wrapper .gfield input[type="email"], .gform_wrapper .gfield input[type="tel"], .gform_wrapper 
+
+/*----------- Champ input de Accès direct à mon compgte --------------*/
+.gfield input[type="url"], .gform_wrapper .gfield input[type="number"], .gform_wrapper .gfield input[type="password"] input[type="number"], .gform_wrapper input[type="password"]
+{border: 1px solid #002a55;font-size: 13px;color: #747474;padding: 0 5px !important;font-family: Arial, Helvetica, sans-serif;height: 35px !important;}
+
+.gform_wrapper .gfield select, .gform_wrapper .gfield textarea{border: 1px solid #002a55;font-size: 13px;color: #747474;padding: 0 5px !important;font-family: Arial, Helvetica, sans-serif;}
+.gform_wrapper .gform_button, .gform_wrapper .button{
+position: relative;
+outline: 0;
+zoom: 1;
+border: 1px solid rgba(0, 0, 0, 0);
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+cursor: pointer;
+box-sizing: border-box;
+transition: all .2s;
+padding: 12px 34px !important;
+border-radius: 0px !important;
+text-decoration: none !important;
+font-size: 18px !important;
+background: #6dc2c1;
+color: #002a55;
+font-family: 'Josefin Sans';
+font-weight: 700;
+letter-spacing: 0px;}
+
+/*FAQ****************************************/
+
+.page-id-12004 li.faq::before{content:"" !important;}
+.page-id-12004 .nav-tabs > li{padding:0 20px 0 0 !important;}
+.page-id-12004 .nav-tabs > li > a {font-family: 'Josefin Sans', sans-serif !important;text-transform: uppercase;font-size: 14px;font-weight: bold;border-top:3px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;border-radius: 0;padding:10px 0 5px 0 !important;}
+.page-id-12004 .faq a{font-family: 'Josefin Sans', sans-serif !important;text-transform: uppercase;font-size: 14px;font-weight: bold;border: 1px solid #fff;}
+.page-id-12004 .nav-tabs > li.active > a,.nav-tabs > li.faq.active > a{border-top:3px solid #6dc2c1;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;}
+.page-id-12004 .nav-tabs > li.active > a:focus, .page-id-12004 .nav-tabs > li.active > a:hover,.page-id-12004 .nav-tabs > li > a:hover,.page-id-12004 .nav-tabs > li > a:focus{border-top:3px solid #6dc2c1;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;color: #002a55;}
+.page-id-12004 .faq_tabs{border-bottom: 1px solid #002a55;margin-bottom: 55px;margin-left:0 !important;}
+.page-id-12004 .panel-title > a{font-size: 18px;display: block;padding: 10px 0;text-decoration: none;font-family: 'Open Sans', Arial, Helvetica, sans-serif;font-weight: 400;line-height: 1;letter-spacing: 0px;}
+.page-id-12004 .panel-default > .panel-heading {color: #333;background-color: #ffffff;border-color: #ddd;}
+.page-id-12004 .fa-plus-square{margin-right:10px;font-size: 18px;color: #002a55;float:left;}
+.page-id-12004 .panel {margin-bottom: 20px;background-color: #fff;border: 1px solid #ffffff;border-radius: 0;-webkit-box-shadow: 0;box-shadow: 0;}
+.page-id-12004 .panel-default > .panel-heading + .panel-collapse > .panel-body{border-top-color: #ffffff;}
+.page-id-12004 .panel-heading{padding:0;}
+.page-id-12004 .panel-body{padding-left:0;padding-right:0;}
+.page-id-12004 .activestate {display:block;}
+.page-id-12004 .panel-default{border-bottom: 1px solid #e5e4e3;}
+.page-id-12004 .plus{display:inline-block;padding: 2px 6px;color: #fff;background-color: #002a55;}
+.page-id-12004 .titrequestion{display:inline-block;}
+.page-template-faqs h4 a[aria-expanded=true] .fa-plus {display:none;}
+.page-template-faqs h4 a[aria-expanded=true] .fa-minus{display:block;}
+.page-template-faqs h4 a[aria-expanded=false] .fa-plus{display:block;}
+.page-template-faqs h4 a[aria-expanded=false] .fa-minus{display:none;}
+.page-template-faqs .main ul{margin-top:10px !important;}
+
+.tax-faq_category li.faq::before{content:"" !important;}
+.tax-faq_category .nav-tabs > li{padding:0 20px 0 0 !important;}
+.tax-faq_category .nav-tabs > li > a {font-family: 'Josefin Sans', sans-serif !important;text-transform: uppercase;font-size: 14px;font-weight: bold;border-top:3px solid #ffffff;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;border-radius: 0;padding:10px 0 5px 0 !important;}
+.tax-faq_category .faq a{font-family: 'Josefin Sans', sans-serif !important;text-transform: uppercase;font-size: 14px;font-weight: bold;border: 1px solid #fff;}
+.tax-faq_category .nav-tabs > li.active > a,.nav-tabs > li.faq.active > a{border-top:3px solid #6dc2c1;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;}
+.tax-faq_category .nav-tabs > li.active > a:focus, .tax-faq_category .nav-tabs > li.active > a:hover,.tax-faq_category .nav-tabs > li > a:hover,.tax-faq_category .nav-tabs > li > a:focus{border-top:3px solid #6dc2c1;border-left:1px solid #ffffff;border-right:1px solid #ffffff;border-bottom:1px solid #ffffff;color: #002a55;}
+.tax-faq_category .faq_tabs{border-bottom: 1px solid #002a55;margin-bottom: 55px;margin-left:0 !important;}
+.tax-faq_category .panel-title > a{font-size: 18px;display: block;padding: 10px 0;text-decoration: none;font-family: 'Open Sans', Arial, Helvetica, sans-serif;font-weight: 400;line-height: 1;letter-spacing: 0px;}
+.tax-faq_category .panel-default > .panel-heading {color: #333;background-color: #ffffff;border-color: #ddd;}
+.tax-faq_category .fa-plus-square{margin-right:10px;font-size: 18px;color: #002a55;float:left;}
+.tax-faq_category .panel {margin-bottom: 20px;background-color: #fff;border: 1px solid #ffffff;border-radius: 0;-webkit-box-shadow: 0;box-shadow: 0;}
+.tax-faq_category .panel-default > .panel-heading + .panel-collapse > .panel-body{border-top-color: #ffffff;}
+.tax-faq_category .panel-heading{padding:0;}
+.tax-faq_category .panel-body{padding-left:0;padding-right:0;}
+.tax-faq_category .activestate {display:block;}
+.tax-faq_category .panel-default{border-bottom: 1px solid #e5e4e3;}
+.tax-faq_category .plus{display:inline-block;padding: 2px 6px;color: #fff;background-color: #002a55;}
+.tax-faq_category .titrequestion{display:inline-block;}
+.tax-faq_category h4 a[aria-expanded=true] .fa-plus {display:none;}
+.tax-faq_category h4 a[aria-expanded=true] .fa-minus{display:block;}
+.tax-faq_category h4 a[aria-expanded=false] .fa-plus{display:block;}
+.tax-faq_category h4 a[aria-expanded=false] .fa-minus{display:none;}
+.tax-faq_category .main ul{margin-top:10px !important;}
+
+/*nos service***/
+.page-id-12862 h2{margin-top:40px !important;}
+
+/*page s'inscrire*/
+#ui-datepicker-div{display:none;}
+.gform_wrapper input.datepicker.datepicker_with_icon{padding:0 5px;}
+.ui-icon-circle-triangle-w,.ui-icon-circle-triangle-e{display:none !important;}
+
+
+@media (max-width: 768px){
+    body#consilio .gform_wrapper{padding:0 0 0 10px;}
+    body#consilio input, body#consilio select,body#consilio .ginput_left.address_country{width:100%;}
+}
+@media (max-width: 767px){
+    .gform_wrapper .gform_button, .gform_wrapper .button{padding: 12px 0 !important;font-size: 16px !important;}
+}
+
+
+/*mdp rechercher*/
+.page-id-14759 input{width:100%;}
+.page-id-14759 .button {
+    position: relative;
+    outline: 0;
+    zoom: 1;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all .2s;
+    padding: 12px 34px !important;
+    border-radius: 0px !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    background: #6dc2c1;
+    color: #002a55;
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    letter-spacing: 0px;
+
+}
+/*Catégorie*****************************/
+ul.list-cluster {
+    list-style: none;
+    margin: 0 0 0 30px;
+}
+ul.list-cluster li {
+    margin-bottom: 20px !important;
+}
+
+ul.list-cluster li a {
+    color: #262626;
+}
+.pad-0{padding:0;}
+
+.pad-10{padding:10px;}
+.pad-10a{padding-top:10px;}
+.pad-10b{padding-right:10px;}
+.pad-10c{padding-bottom:10px;}
+.pad-10d{padding-left:10px;}
+
+.pad-15{padding:15px;}
+.pad-15a{padding-top:15px;}
+.pad-15b{padding-right:15px;}
+.pad-15c{padding-bottom:15px;}
+.pad-15d{padding-left:15px;}
+
+
+.pad-15{padding:15px;}
+
+.pad-20{padding:20px;}
+.pad-20a{padding-top:20px;}
+.pad-20c{padding-bottom:20px;}
+
+.pad-25{padding:25px;}
+.pad-25a{padding-top:25px;}
+.pad-25b{padding-right:25px;}
+.pad-25c{padding-bottom:25px;}
+.pad-25d{padding-left:25px;}
+
+.pad-30{padding:30px;}
+.pad-30a{padding-top:30px;}
+.pad-30b{padding-right:30px;}
+.pad-30c{padding-bottom:30px;}
+.pad-30d{padding-left:30px;}
+
+.pad-50a{padding-top:50px;}
+.pad-50b{padding-right:50px;}
+.pad-50c{padding-bottom:50px;}
+.pad-50d{padding-left:50px;}
+
+.marg-0{margin:0;}
+
+.marg-60a{margin-top:60px;}
+.marg-60c{margin-bottom:60px;}
+
+.marg-30a{margin-top:30px;}
+.marg-30b{margin-right:30px;}
+.marg-30c{margin-bottom:30px;}
+.marg-30d{margin-right:30px;}
+
+.marg-20a{margin-top:20px;}
+.marg-20b{margin-right:20px;}
+.marg-20c{margin-bottom:20px;}
+.marg-20d{margin-right:20px;}
+
+.marg-10c{margin-bottom:10px;}
+
+.pad-bordureleft{background: url('img/fleche.png') no-repeat left 10px transparent;}
+
+/*3colonnes vignettes**************/
+.contenu1{padding:20px 15px;margin-top: -90px;}
+.bandeau_titre{background-color: rgba(255, 255, 255, 0.8);}
+.zone_hover{position: absolute;background: #6dc2c1;margin: 20px 15px 20px 0;opacity: 0;top: 0;}
+.zone_titre{padding: 0;}
+.titre_vignette{text-align:center;font-size: 18px;font-size: 18px !important;line-height: 21px !important;margin:0;padding:8px 0;}
+.texte_hover{color: #fefefe !important;opacity:0;position: absolute;top:45%;width:100%;}
+.texte_hover a{color: #fefefe !important;}
+.zone_text{padding-right:30px;}
+.vignette31:hover .texte_hover,.vignette31:focus .texte_hover{opacity:1;}
+.vignette31:hover .contenu_principal1,.vignette31:focus .contenu_principal1{opacity: 0;display:none;}
+.vignette31:hover .contenu_principal,.vignette31:focus .contenu_principal{background: #6dc2c1;}
+.vignette31:hover .zone_hover, .vignette31:focus .zone_hover{opacity:1;}
+
+.content-container {position: absolute;top: 68%;background-color: rgba(255, 255, 255, 0.8);width: 100%;padding: 0;height: 60px;width: 333.328px;max-height: 60px;}
+.fusion-content-boxes.content-boxes-icon-on-top .heading{text-align: center;}
+.fusion-content-boxes .heading {overflow: hidden;margin-bottom: 15px;}
+.content-container .boxbcontent1{width: 28%;position: relative;float: left;margin: 0;padding-left: 15px;padding-top: 7px;}
+.content-container .boxbcontent2{width: 70%;position: relative;float: left;margin-top: -8px;padding-right: 5px; }
+.content-container .boxbcontent2 h3{margin:15px 0; }
+@media (max-width: 1068px){
+    .content-container .boxbcontent1{width:20%;padding-top: 10px;}
+}
+@media (max-width: 980px){
+    .page-id-11830 .grey .container-fluid{padding-left:0 !important;padding-right:0 !important;}
+    .page-id-11830 .content-container{top:70%;}
+}
+@media (max-width: 768px){
+    .page-id-11830 .vignette31{width:360px;clear: both;margin: 0 auto;float: none;}
+    .content-boxes-icon-on-top .heading{text-align: center;}
+    .icon-hover-animation-fade{text-align: center;width: 43%;margin: 0 auto;}
+    .content-container{max-width:330px;}
+    .zone_hover{position:relative;margin:0;width:350px;}
+    .contenu_principal1{position:absolute;}
+}
+@media (max-width: 360px){
+    .page-id-11830 .vignette31{width:100%;padding-left:0 !important;padding-right:0 !important;}
+    .zone_hover{max-width: 100% !important;}
+}
+.content-container .infocontentsurvol-b{ opacity: 0;background: #6dc2c1;color: #fefefe !important;width: 100%;height: 280px;position: absolute;top: -195px;left: 0;z-index: 9;padding: 120px 30px;font-family: 'Open Sans', Arial, Helvetica, sans-serif;font-weight: 300;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;-ms-transition: all 0.8s ease;-o-transition: all 0.8s ease;transition: all 0.8s ease;text-align: center;}
+.content-container .infocontentsurvol-b a{color: #fefefe !important;display: block;width: 100%;height: 280px;position: absolute;top: 0;left: 0;padding: 120px 30px;background: transparent; }
+.content-container h3{ padding-top: inherit;font-weight: 600;font-family: 'Josefin Sans', sans-serif;font-size: 18px !important;line-height: 21px !important;}
+.link-type-text:hover .content-container .infocontentsurvol-b,.link-type-text:focus .content-container .infocontentsurvol-b{opacity:1;}
+.button-1 {display: inline-block;width: auto;background: #6dc2c1;border-width: 0px;border-color: #002a55;color: #002a55; font-family: 'Josefin Sans';font-weight: 700;letter-spacing: 0px;font-size: 24px;text-transform: uppercase;cursor: pointer;border-radius: 2px;padding: 12px 40px !important;padding-top: 16px !important;margin-top: 30px;margin-bottom: 40px;}
+.button-1:hover,.button-1:focus, .gform_button:hover, .gform_button:focus{background: #002a55;color:#ffffff;}
+
+
+/* ------------ Style button 2 ------------ */
+.button-2 {display: inline-block;width: auto;background: #6dc2c1;border-width: 0px;border-color: #002a55;color: #002a55; font-family: 'Josefin Sans';font-weight: 700;letter-spacing: 0px;font-size: 24px;text-transform: uppercase;cursor: pointer;border-radius: 20px;padding: 12px 40px !important;padding-top: 16px !important;margin-top: 30px;margin-bottom: 40px;}
+.button-2:hover,.button-1:focus, .gform_button:hover, .gform_button:focus{background: #002a55;color:#ffffff;}
+
+.button-2{
+	font-size: 12px;
+	padding: 10px 18px !important;
+	margin: 25px 0;
+	display: inline-block;
+}
+/* ---------Fin de style button 2 ----------- */
+
+
+.fusion-title{text-align: center;margin-top: 30px;margin-bottom: 0px;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-flex-wrap: nowrap;-ms-flex-wrap: nowrap;flex-wrap: nowrap;-webkit-align-items: center;-ms-align-items: center;-ms-flex-align: center;align-items: center;margin: 0 0 31px;overflow: hidden;}
+.fusion-title .title-sep-container{position: relative;height: 6px;-webkit-flex-grow: 1;-ms-flex-grow: 1;-ms-flex-positive: 1;flex-grow: 1;}
+.fusion-title .title-sep {position: relative;display: block;width: 100%;border-style: solid;border: 0 solid #e7e6e6;box-sizing: content-box;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;-o-box-sizing: content-box;}
+.fusion-title .title-sep.sep-single{border-bottom-width: 3px;}
+.title-heading-center{margin-top:10px;padding:5px 20px;}
+
+.bordure{height:6px;border-top:3px solid #67ccca;width:100%;}
+.bouton-home{background-color: #6dc2c1;border-color: #002a55;}
+
+.page .title-heading-center{font-size:36px;font-family: 'Josefin Sans';font-weight: 600;line-height: 1;letter-spacing: 0px;max-width:75%;}
+.page .title-heading-left{font-size: 26px;padding-left: 15px;padding-right: 0;font-family: 'Josefin Sans';font-weight: 600;line-height: 1.08;letter-spacing: 0px;text-align: left;margin-top:10px;}
+
+/*Comment ça marche**************************/
+.bordure_fleche{background: url('img/pcamarche-sep.jpg') no-repeat center top transparent;height: 42px;margin-top:0px;margin-bottom:20px;}
+.bordure_ligne{border-top: 1px solid #f8d362;margin-left: auto;margin-right: auto;margin-top: 0;margin-bottom: 30px;height: 5px;}
+.noire{border-top: 1px solid #002955;margin:30px 0;}
+
+/*Contact**************************************/
+.input-name, .input-email, .input-website, .textarea-comment{width:100%;border: 1px solid #6dc2c1 !important;padding:8px 15px;font-size: 13px;}
+.page-id-11838 .title-heading-center{font-size:26px !important;}
+.page-id-11838 .button-1{font-size:14px;padding: 12px 30px !important;}
+.contact-alert{padding : 40px 20px;text-transform:uppercase;border: 1px solid #790000 !important;border-radius:0 !important;}
+.alert-dismissable .close, .alert-dismissible .close{right:0 !important;}
+
+
+
+/********************************* Offres *************************/
+
+.page-id-13650 .button-1{font-size: 12px;padding: 10px 18px !important;margin: 20px 0;display: inline-block;}
+.page-id-13650 h3 {font-weight: 600 !important;font-size: 15px !important;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;text-transform: uppercase;height: 42px;margin-top: 0px;}
+.page-id-13650 p{font-size:14px;}
+.moreinfo_offer_link{font-style: italic;text-decoration: none;color: #6dc2c1;/*margin-top:50px;*/display: inline-block;}
+a.moreinfo_offer_link:hover,a.moreinfo_offer_link:focus{text-decoration: underline;color: #6dc2c1;cursor: pointer;}
+.page-id-13650 .modal{margin-top: 60px;z-index: 99999;}
+.page-id-13650 .modal-offre{width:300px !important;}
+.close{font-size: 30px;margin-top: -5px;text-shadow: none;}
+.page-id-13650 button.bouton-1{width: auto;background: #6dc2c1;border-width: 0px;border-color: #002a55;color: #002a55; font-family: 'Josefin Sans';font-weight: 700;letter-spacing: 0px;font-size: 12px;padding: 10px 18px !important;margin: 20px 0;display: inline-block;text-transform: uppercase;cursor: pointer;border-radius: 2px;}
+.page-id-13650 button.bouton-1:hover,.page-id-13650 button.bouton-1:focus{background: #002a55;color:#ffffff;}
+.modal_titre{font-family: 'Josefin Sans';font-weight: 600;line-height: 1;letter-spacing: 0px;color: #002a55;font-size: 20px;margin:20px 0;}
+.page-id-13650 .modal-footer{margin-top:50px;}
+.tableau{border-color: #eae9e9;border-bottom-width: 0px;border-top-width: 0px;border-bottom-style: solid;border-top-style: solid;padding-bottom: 20px;padding-top: 20px;}
+
+#offres-tarifs-part {
+	background: #f2f1f2;
+	margin-top: 0px;
+	margin-bottom: 20px; 
+	border-right: 7px solid #fff !important;
+} /* ---- A modiffier pour avoir 2 colonnes centrées-----*/
+
+#offres-tarifs-part2 {
+	/*margin-left: 25%;
+	margin-right: 25%;*/
+	margin-top: 0;
+	margin-bottom: 20px; 
+	border-right: 7px solid #fff !important;
+}
+
+#offres-tarifs-pro {background: #f2f1f2;margin-top: 0px;margin-bottom: 20px;border-left: 7px solid #fff !important;}
+
+.titre-tab-offre{font-size: 21.07px !important;font-weight: bold !important;text-align: center;background: #002454;padding:15px 0; text-transform: uppercase;font-family: 'Josefin Sans';line-height: 1.08;letter-spacing: 0px; border-top-right-radius:15px; border-top-left-radius:15px; color: #fff;}
+
+.colonne_offre{background-color:#ffffff; padding:5px;text-transform: uppercase;}
+
+.fond-gris{background: #f2f1f2;} /*valeur par defaut: #f2f1f2*/
+/*.liste-offres{padding:0 10px 10px 10px;}*/
+
+.intitule {
+   /* border-bottom: 1px solid #f2f1f2 !important;*/
+    /*border-top: 1px solid #f2f1f2 !important;*/
+    padding: 25px 45px; /*Valeur par defaut: 10px 45px */
+    text-align: center !important;
+    color: #fff; /* valeur par defaut: #002a55*/
+    font-weight: bold;
+    background: #002454;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.fond-jaune {
+    background: #002454;
+
+
+}
+
+
+/*--------------------Hover colonnes Offres prix ----------------------------*/
+.pricing-grid1:hover, .pricing-grid2:hover {
+    transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+-o-transform: scale(1.05);
+-ms-transform: scale(1.05);
+    z-index:1;
+    border: none;
+	/*background-color: #BEBCBC; /*backgound colonne prix en proposition*/
+	/*border: 2px solid #002a55;*/
+}
+
+.pricing-grid1,.pricing-grid2 {
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+-moz-transition: 0.5s all;
+-o-transition: 0.5s all;
+border: none;
+border-radius: none;
+-webkit-border-radius: none;
+-o-border-radius: none;
+-moz-border-radius: none;
+}
+
+
+.border-int-tarif {
+    border-right: 1px solid #cecdcd !important;
+    border-left: 1px solid #cecdcd !important;
+
+}
+.npers {
+    text-align: center !important;
+    padding: 20px 45px;
+    min-height: 130px;
+    height: 130px;
+    vertical-align: baseline;
+    line-height: 20px;
+    border-bottom: 1px solid #cecdcd !important;
+    
+}
+
+.npers2 {
+    text-align: center !important;
+    padding: 20px 45px;
+    min-height: 130px;
+    height: 130px;
+    vertical-align: baseline;
+    line-height: 20px;
+    border-bottom: 1px solid #cecdcd !important;
+    
+}
+
+.duree {
+    text-align: center !important;
+    line-height: 20px;
+}
+.tarif {
+    text-align: center !important;
+    font-size: 37.93px;
+    color: #002a55;
+    font-weight: bold;
+    line-height: 13px !important;
+    padding-top: 17px;
+}
+.decimal {
+    font-size: 14.75px;
+    font-weight: bold;
+    line-height: 13px !important;
+}
+.devise {
+    font-size: 14.75px;
+    font-weight: normal;
+    line-height: 13px !important;
+}
+.buttonaction {
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    border-bottom: 1px solid #cecdcd !important;
+}
+.contenu_offre{min-height:240px;}
+@media (max-width: 991px){
+    .contenu_offre{min-height:50px;}
+    .moreinfo_offer_link{margin-top:0;}
+    #offres-tarifs-pro{border-left: 0 !important;border-right: 7px solid #fff !important;}
+}
+
+/*offre cnp lyfe*/
+.page-id-13455 .moreinfo_offer_link{margin-top:0;margin-bottom : 50px;}
+.page-id-13455 .bloc-offre{border: 10px solid #F2F1F2;}
+.page-id-13455 .detail_offre{border-bottom:1px solid #F2F1F2;}
+.page-id-13455 .bouton_offre{padding:15px;}
+.page-id-13455 .button-1{margin:0;padding: 10px 40px !important;font-size: 14px;}
+.page-id-13455 .modal-offre .button-1{width: auto;
+background: #6dc2c1;
+border-width: 0px;
+border-color: #002a55;
+color: #002a55;
+font-family: 'Josefin Sans';
+font-weight: 700;
+letter-spacing: 0px;
+font-size: 12px;
+padding: 10px 18px !important;
+margin: 20px 0;
+display: inline-block;
+text-transform: uppercase;
+cursor: pointer;
+border-radius: 2px;}
+.page-id-13455 h3{margin:0;color: #002a55 !important;font-size: 14.5px !important;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;font-weight: 600 !important;text-transform: uppercase !important;}
+.page-id-13455 .titre_offre{padding:15px;border-bottom: 1px solid #002a55 !important;}
+.page-id-13455 .contenu_offre{padding:15px;}
+.page-id-13455 .description_offre{text-transform: uppercase;}
+.price-with-decimal{position:relative;}
+.price-with-decimal .currency {top: -20px;font-size: 21px;}
+.price-with-decimal .integer-part {font-size: 55px;color: #002a55 !important;display: inline;font-weight: bold;line-height: normal;font-family: 'Josefin Sans';}
+.price-with-decimal .decimal-part {top: -20px;font-size: 17px;}
+.price-with-decimal .time {position: relative;font-style: italic;color: #888888;margin-left: -14px;font-size: 11px;}
+
+
+/*nos offres prix pour non connectés*/
+.prix{padding: 50px 0;border-top: 1px solid #F2F1F2;border-bottom: 1px solid #F2F1F2;}
+.offre-nos-offres{margin-bottom:30px;}
+.offres-particulier,.offres-particulier .row{background-color:#F2F1F2;}
+.offre-nos-offres, .offre-nos-offres .row{background-color: #ffffff !important;}
+.offre-nos-offres.left{border-top:10px solid #F2F1F2;border-right:1px solid #F2F1F2;border-bottom:10px solid #F2F1F2;border-left:10px solid #F2F1F2;}
+.offre-nos-offres.center{border-top:10px solid #F2F1F2;border-right:1px solid #F2F1F2;border-bottom:10px solid #F2F1F2;border-left:1px solid #F2F1F2;}
+.offre-nos-offres.right{border-top:10px solid #F2F1F2;border-right:10px solid #F2F1F2;border-bottom:10px solid #F2F1F2;border-left:1px solid #F2F1F2;}
+.titre_partie{padding:20px;text-transform: uppercase;background-color:#F2F1F2;}
+.titre_partie h2{margin:0;padding:0;font-family: 'Josefin Sans';font-weight: 600;line-height: 1.08;letter-spacing: 0px;font-size:22px;}
+.prix-particulier{padding-right:20px;}
+.page-id-12582 .moreinfo_offer_link{margin-top:0;margin-bottom : 50px;}
+.page-id-12582 .bloc-offre{border: 10px solid #F2F1F2;}
+.page-id-12582 .detail_offre{border-bottom:1px solid #F2F1F2;}
+.page-id-12582 .bouton_offre{padding:15px;}
+.page-id-12582 .button-1{margin:0;padding: 10px !important;font-size: 14px;/*word-break: break-all;*/}
+.page-id-12582 .description_offre{padding-top:20px;}
+.page-id-12582 .modal-offre .button-1{width: auto;
+background: #6dc2c1;
+border-width: 0px;
+border-color: #002a55;
+color: #002a55;
+font-family: 'Josefin Sans';
+font-weight: 700;
+letter-spacing: 0px;
+font-size: 12px;
+padding: 10px 18px !important;
+margin: 20px 0;
+display: inline-block;
+text-transform: uppercase;
+cursor: pointer;
+border-radius: 2px;}
+.page-id-12582 h3{margin:0;color: #002a55 !important;font-size: 14.5px !important;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;font-weight: 600 !important;text-transform: uppercase !important;}
+.page-id-12582 .titre_offre{padding:15px;border-bottom: 1px solid #002a55 !important;}
+.page-id-12582 .contenu_offre{padding:15px;}
+.page-id-12582 .description_offre{text-transform: uppercase;}
+.offre-nos-offres.left.le_prix{margin: -10px -9px -10px 0;position: relative;z-index: 1000;border-right: 10px solid #F2F1F2;box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.08);}
+.offre-nos-offres.right.le_prix{margin: -10px -9px -10px 0;position: relative;z-index: 1000;border-left: 10px solid #F2F1F2;box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.08);}
+.offre-nos-offres.center.le_prix{margin: -10px -9px -10px 0;position: relative;z-index: 1000;border-right: 10px solid #F2F1F2;;border-left: 10px solid #F2F1F2;box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.08);}
+/*Connexion dans mon compte***********************************/
+.page-id-12449 h4{padding:0 10px;}
+
+#gform_fields_5, #gform_fields_38{min-height:50px;} /*-------Valeur par defaut: min-height: 150px --------*/
+
+@media (max-width: 767px){
+    #menucontainer{padding-left:20px;text-align:center !important;}
+    #menucontainer img{margin:0 auto !important;}
+    #menucontainer ul{display: inline-grid !important;text-align: center !important;padding-top: 15px !important;}
+    .page-template-page-template-espace-mon-compte .menu_compte, .pmpro-invoice .menu_compte, .page-id-12097 .menu_compte{text-align: center !important;}
+}
+
+/*Espace mon compte***********************************/
+.menu_compte .nav-tabs > li > a:hover, .menu_compte .nav-tabs > li > a:focus{background-color:#ffffff;}
+.company_info{margin-top: 150px;}
+.company_info p{line-height: 1;font-size:10px;margin:0;padding:0; color:#808080;}
+.detail{height:120px;}
+#nav-below{margin-top:20px;}
+.facture_total td, .facture_total th, .facture_detail td, .facture_detail th{text-align: center;}
+@media print {
+    #facture{display:block !important;}
+    .facture_numero,.facture_total{float:right;}
+    #header,.titre_compte,.bordure_titre_compte,#menucontainer,#nav-below,.parrainage_compte,.fusion-footer,.noprint{display: none !important;}
+    .parrainage_compte img{margin:0 auto !important;}
+}
+.page-template-page-template-espace-mon-compte .menu_compte, .pmpro-invoice .menu_compte, .page-id-12097 .menu_compte{margin-left:0 !important;margin-right:0 !important;padding-left:0 !important;padding-right:0 !important;}
+.contenu_compte{padding:0 25px;}
+.page-template-page-template-espace-mon-compte .titre_compte h1,.pmpro-invoice .titre_compte h1{font-size: 28px;font-family: 'Josefin Sans';font-weight: 600;line-height: 1;letter-spacing: 0px;text-align:center;}
+.page-template-page-template-espace-mon-compte .pespaceclient-sep, .pmpro-invoice .pespaceclient-sep {background: url('assets/images/pespaceclient-sep.jpg') no-repeat center top transparent;height:7px;margin-bottom: 40px !important;}
+.page-template-page-template-espace-mon-compte .button-small, .pmpro-invoice .button-small{font-size:12px;padding-top:5px !important;padding-bottom:5px !important;padding-left:10px !important;padding-right:10px !important;}
+.page-template-page-template-espace-mon-compte .lien_parrainage,  .pmpro-invoice .lien_parrainage{margin-top:-100px;}
+.page-template-page-template-espace-mon-compte, .page-template-page-template-espace-mon-compte #menucontainer ul, .pmpro-invoice, .pmpro-invoice #menucontainer ul{margin:0;padding:0;border-bottom:none;}
+.page-template-page-template-espace-mon-compte #menucontainer ul li,.pmpro-invoice #menucontainer ul li {list-style-type: none;padding-left: 0 !important;margin-bottom: 12px;margin-right:0 !important;}
+.page-template-page-template-espace-mon-compte #menucontainer ul li::before, .pmpro-invoice #menucontainer ul li::before {font-size: 17px;font-weight: bold;content: " ";display: block;width: 100%;height: auto;position: relative;margin-left: 0 !important;}
+.page-template-page-template-espace-mon-compte #menucontainer ul li a, .pmpro-invoice #menucontainer ul li a  {font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;font-size: 17px;font-weight: bold;color: #002a55;border-bottom: 4px solid #fff;border-left: 1px solid #fff;border-right: 1px solid #fff;border-top: 1px solid #fff;text-transform: uppercase;padding:0;}
+.page-template-page-template-espace-mon-compte #menucontainer ul li.active a, .page-id-12097 #menucontainer ul li a:hover, .page-id-12097 #menucontainer ul li a:focus,.pmpro-invoice #menucontainer ul li.active a, .page-id-12097 #menucontainer ul li a:hover, .page-id-12097 #menucontainer ul li a:focus {border-bottom: 4px solid #67ccca;}
+.page-template-page-template-espace-mon-compte .titre_mon_espace, .pmpro-invoice .titre_mon_espace{border-bottom:1px solid #002a55;padding-bottom:10px;font-size:16px;margin-top: 0px;font-size: 16px !important;line-height: 18px !important;font-weight: bold !important;font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;clear: left !important;width: 100%;display: inline-block;}
+.ligne_2, #pmpro_account-membership,#pmpro_account-profile,#pmpro_account-invoices{margin-bottom:50px;}
+.pmpro-invoice .ligne_2, .page-id-12349 .ligne_2{margin-bottom:10px;}
+.page-id-12349 .gform_wrapper{margin:0;}
+#pmpro_account-membership td{vertical-align: top;}
+.lien-mon-compte{padding: 9px 20px !important;float:right;font-size:15px;text-decoration: underline;text-transform: uppercase;font-weight: bold;font-style: italic;}
+.page-template-page-template-espace-mon-compte .lien-mon-compte{text-decoration: none;}
+
+.bouton{font-family: 'Josefin Sans';font-style:normal;text-decoration:none;}
+
+.page-template-page-template-espace-mon-compte pre, .pmpro-invoice pre, .page-id-12097 pre{background-color: #ffffff;border: 1px solid #ffffff;padding:0;}
+code {font-family: 'Open Sans';font-weight: 400;letter-spacing: 0px;font-style: italic;font-size: 13px;}
+.sticky-list{width:100%;}
+.rdv td{background-color:#fff;}
+table {max-width: 100%;background-color: transparent;}
+.page-id-12097 .sticky-list-wrapper tr {background: #f0eff0;}
+table.sticky-list th:not(.sticky-action) {cursor: pointer;padding : 5px;}
+.sticky-list-wrapper th {text-transform: uppercase;font-size: 14px !important;line-height: 18px !important;text-align: left;}
+
+.page-id-12097 .sticky-list-wrapper th {
+    width: 26%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #002a55;
+    background: #fff;
+    padding-top: 5px;
+    font-style: normal;
+    padding-bottom: 5px;
+}
+.page-id-12097 .sticky-list-wrapper tr {
+    background: #f0eff0;
+}
+table.sticky-list tr:nth-child(2n+2) {
+    background: #efefef !important;
+}
+.page-id-12097 .sticky-list-wrapper tr td.sort-0.sticky-nowrap.stickylist-hidden {
+    text-transform: uppercase;
+    color: #6dc2c1 !important;
+    font-weight: 700;
+}
+.sticky-list-wrapper tr td {
+    font-size: 12px !important;
+    color: #464646 !important;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+    padding: 5px;
+    font-style: normal;
+}
+table.sticky-list th.sticky-action, table.sticky-list td.sticky-action {
+    text-align: right;
+    white-space: nowrap;
+}
+.sticky-list-wrapper button.sticky-list-edit {
+    font-size: 10px;
+    text-decoration: none !important;
+}
+.sticky-list-wrapper button.sticky-list-delete {
+    font-size: 10px;
+    text-decoration: none !important;
+}
+.sticky-list-wrapper button.sticky-list-edit::before {
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f040";
+    font-size: 13px;
+    padding-right: 5px;
+}
+.sticky-list-wrapper button.sticky-list-delete::before {
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f1f8";
+    font-size: 13px;
+    padding-right: 5px;
+}
+.page-template-page-template-espace-mon-compte .gform_wrapper .gsection{border-bottom:1px solid #002a55;}
+.page-template-page-template-espace-mon-compte .gsection h2{margin-top: 0px;
+font-size: 16px !important;
+line-height: 18px !important;
+font-weight: bold !important;
+font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+clear: left !important;
+width: 100%;
+display: inline-block;}
+
+#pmpro_account-profile .pmpro_actionlinks a{text-transform: uppercase;}
+.pmpro-account .pmpro_actionlinks a{text-decoration: underline;}
+.pmpro-invoice h3{font-family: 'Josefin Sans' !important;
+font-weight: 600 !important;
+line-height: 1;
+letter-spacing: 0px;
+font-size: 24px !important;
+text-transform: unset;margin-bottom:50px;}
+.pmpro-invoice .main ul{margin-left:50px;margin-bottom:50px;}
+.pmpro-invoice .main ul li{margin:0 !important;padding:0 !important;list-style-type: initial;}
+.pmpro-invoice .main ul li::before{content:" " !important;}
+.pmpro-invoice th{font-size:15px;font-family: 'Josefin Sans';
+font-weight: 600;
+line-height: 1;
+letter-spacing: 0px;text-align:left;text-transform: unset}
+.pmpro-invoice td{padding:0 20px 0 0;}
+#pmpro_invoice_table{margin-bottom:50px;}
+#pmpro_account-membership td{padding-right:15px;}
+
+
+
+/*Mon profil*/
+#input_15_14_6_label{display:none;}
+#input_34_9{width:auto;}
+
+
+/*Mes demandes*************************/
+.page-id-12793 .sticky-list {width:100%;}
+.icon_fichier{margin-right:10px;margin-bottom:20px;}
+.well{background-color:#ffffff;border-color:#ffffff;}
+#reagir{margin-top:20px;}
+
+
+/*****Nouvelle demande*****/
+.page-id-12271 #field_10_51,
+.page-id-12271 #field_10_71,
+.page-id-14869 #field_10_51,
+.page-id-14871 #field_10_24,
+.page-id-14871 #field_10_10,
+.page-id-14871 #field_10_9,
+.page-id-14871 #field_10_11,
+.page-id-14871 #field_10_12,
+.page-id-14871 #field_10_13,
+.page-id-14871 #field_10_14,
+.page-id-14871 #field_10_15,
+.page-id-14871 #field_10_16,
+.page-id-14871 #field_10_17,
+.page-id-14871 #field_10_18,
+.page-id-14871 #field_10_19,
+.page-id-14871 #field_10_26,
+.page-id-14871 #field_10_27,
+.page-id-14871 #field_10_28,
+.page-id-14871 #field_10_29,
+.page-id-14871 #field_10_30,
+.page-id-14871 #field_10_31,
+.page-id-14871 #field_10_20,
+.page-id-14871 #field_10_21,
+.page-id-14871 #field_10_43,
+.page-id-14871 #field_10_44,
+.page-id-14871 #field_10_45,
+.page-id-14871 #field_10_46,
+.page-id-14871 #field_10_48,
+.page-id-14871 #field_10_47,
+.page-id-14871 #field_10_32,
+.page-id-14871 #field_10_33,
+.page-id-14871 #field_10_36,
+.page-id-14871 #field_10_35,
+.page-id-14871 #field_10_34,
+.page-id-14871 #field_10_37,
+.page-id-14871 #field_10_38,
+.page-id-14871 #field_10_41,
+.page-id-14871 #field_10_40,
+.page-id-14871 #field_10_42,
+.page-id-14871 #field_10_25,
+.page-id-14871 #field_10_49,
+.page-id-14871 #field_10_50,
+.page-id-14871 #field_10_59,
+.page-id-14871 #field_10_60,
+.page-id-14871 #field_10_61,
+.page-id-14871 #field_10_62,
+.page-id-14871 #field_10_63,
+.page-id-14871 #field_10_64,
+.page-id-15739 #field_60_59,
+.page-id-15739 #field_60_60,
+.page-id-15792 #field_60_10,
+.page-id-15792 #field_60_17,
+.page-id-15792 #field_60_18,
+.page-id-15792 #field_60_20,
+.page-id-15792 #field_60_41,
+.page-id-15792 #field_60_40,
+.page-id-15792 #field_60_42,
+.page-id-12271 #field_10_76,
+.page-id-12271 #input_10_15_6_label, 
+.page-id-13463 #input_34_20_6_label,
+.page-id-12271 #field_10_21,
+#field_10_71,
+#field_60_74,
+.page-id-15739 #field_60_73,
+.page-id-15739 #field_60_74,
+.page-id-15739 #field_60_75,
+.page-id-15852 #field_60_10,
+.page-id-15852 #field_60_16,
+.page-id-15852 #field_60_17,
+.page-id-15852 #field_60_20,
+.page-id-15852 #field_60_37,
+.page-id-15852 #field_60_41,
+.page-id-15852 #field_60_40,
+.page-id-15852 #field_60_42,
+.page-id-15852 #field_60_25,
+.page-id-15852 #field_60_18,
+.gravityflow-discussion-item,
+.entreprise .menu_14876, 
+.entreprise .menu_12290,
+.entreprise .menu_12793,
+li#field_53_8,
+li#field_54_13,
+li#field_56_9{display:none;}/*.cnp .menu_12290,*/
+.bouton-blanc:hover,.bouton-blanc:focus,.bouton-blanc{background-color: #ffffff;color:#6DC2C1;}
+
+.page-id-12793 .ligne_2{margin-bottom:0;}
+
+
+
+/*Nouvelle demande médecin de ville*/
+#map-search-doctor {
+    margin: 0 auto;
+    width: 90%;
+    height: 600px;
+}
+/*mes ayants droit*/
+.page-id-12290 code{font-style: normal;}
+
+/*Paiement ==> chackout****/
+.gateway_, .gateway_paypalexpress, .gateway_paypal{margin-right:20px;}
+
+/*Image alignement***********************/
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
+/*footer*****************/
+.fusion-footer,.fusion-footer a{color:#ffffff;}
+a.current{color:#6dc2c1;}
+.fusion-footer a:hover, .fusion-footer a:focus{color:#00D0CC !important;}
+.fusion-footer-widget-area{background-color: #c5c4c4;border-color: #c5c4c4;border-top-width: 12px;padding-top: 30px;padding-bottom: 40px;}
+.fusion-footer-widget-area ul li a {font-family: 'PT Sans';padding: 1px 0 0 0;border-bottom: 0px;letter-spacing: 0.5px;font-weight: 400 !important;font-size: 12px !important;}
+.fusion-footer-widget-area .widget-title{font-family: 'Josefin Sans';
+font-size: 13px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.5px !important;margin: 0 0 28px;
+color: #ddd;
+text-transform: uppercase;
+font: 13px/20px 'PTSansBold', arial, helvetica, sans-serif;color:#ffffff;}
+.fusion-footer-widget-area .contact-info-footer p {
+    line-height: 4px;
+    font-size: 12px !important;
+    font-family: 'PT Sans';
+    margin-bottom: 0 !important;
+    -webkit-margin-before: 0.4em !important;
+    -webkit-margin-after: 0 !important;
+}
+.fusion-footer-widget-area .contact-info-footer p.adresslines {
+    padding-left: 20px !important;
+    clear: left !important;
+    display: inline-block !important;
+    line-height: 14px !important;
+    padding-top: 0 !important;
+    margin-top: 2px !important;
+}
+.fusion-footer-widget-area .contact-info-footer p.phonelines {
+    padding-left: 22px !important;
+    line-height: 14px !important;
+    padding-top: 0 !important;
+    margin-top: 2px !important;
+}
+.fusion-footer-widget-area .contact-info-footer .web::before {font: normal normal normal 16px/1 FontAwesome;content: "\f0c1";padding-right: 10px;}
+.fusion-footer-widget-area .contact-info-footer .email::before {
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f086";
+    padding-right: 10px;
+}
+.fusion-footer-widget-area .contact-info-footer .phone::before {
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f095";
+    padding-right: 10px;
+}
+.fusion-footer-widget-area .contact-info-footer .address::before {
+    font: normal normal normal 16px/1 FontAwesome;
+    content: "\f041";
+    padding-right: 10px;
+}
+.fusion-footer-widget-area ul li a::before {
+    position: absolute;
+    font: normal normal normal 12px/1 FontAwesome;
+    content: "\f105";
+    margin-left: -10px;
+    color: #fff !important;
+    margin-top: 5px;
+}
+.fusion-footer-widget-area ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 23px;
+}
+.fusion-column ul{padding-left:10px;}
+.phone, .email, .web{margin-top:10px;}
+.fusion-footer-copyright-area{background-color:#d1cfcf;color:#ffffff;font-size: 12px;font-family: 'PT Sans';padding:20px 15px;}
+.fusion-copyright-notice{padding:0 15px;}
+
+
+/*Paiement option couverture d'un proche*/
+input.wspsc_add_cart_submit{background-color: #fff;
+border: none;
+padding: 9px 20px !important;
+float: right;
+font-size: 15px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bold;
+font-style: italic;
+color: #6dc2c1;}
+input.wspsc_add_cart_submit_lien{background-color: #fff;
+border: none;
+padding: 0 !important;text-decoration: underline;}
+
+/* patch bug sur puces dans les formulaires sous Safari */
+.main ul li {
+    list-style-position: outside !important;
+    overflow: hidden !important;
+}
+
+
+/*--------------  Custom formulaire d'inscription  -------------*/
+
+.corners {
+    border: 1px solid #002a55;
+    /*padding: 20px;
+    width: 200px;
+    height: 150px;*/
+}
+
+
+/*------------- Ligne verticale -----------*/
+
+#ligne_verticale {
+	clear: both;
+	position: absolute;
+	top: 260px;
+	right: 0;
+	bottom: 20px;
+	height: 43%;
+	width: 51%;
+	border: 1px solid #002a55;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+	content: "";
+}
+
+/*form ul.gform_fields li {*/
+    /*list-style-type: none !important;*/
+    /*list-style-position: outside !important;*/
+    /*overflow: hidden !important;*/
+/*}*/
+
+/*form ul.gform_fields li:before {*/
+    /*!*list-style-type: none !important;*!*/
+/*}*/
