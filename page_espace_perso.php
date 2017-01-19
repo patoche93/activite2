@@ -705,6 +705,6 @@ max-height: 68px !important;padding-top:5px;padding-bottom:5px;margin-top:20%;">
     endwhile; endif;
 ?>
 
-
-
 <?php get_footer(); ?>
+
+/*Ajouter ce fichier avec la commande : git push origin master */
